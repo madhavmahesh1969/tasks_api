@@ -21,7 +21,11 @@ exports.getTasks = async function(req, res, next){
 exports.createTask = async function(req, res, next){
     var task = {
         id: req.body.id,
-        title: req.body.title        
+        title: req.body.title,
+        taskStatus: req.body.taskStatus,
+        date: req.body.date,
+        idDesc: req.body.idDesc,
+        time: req.body.time        
     }
 
     try{

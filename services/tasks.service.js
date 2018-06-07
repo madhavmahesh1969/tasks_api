@@ -20,7 +20,11 @@ exports.createTask = async function(task){
 
     var newTask = new Task({
         id: task.id,
-        title: task.title
+        title: task.title,
+        taskStatus: task.taskStatus,
+        date: task.date,
+        idDesc: task.idDesc,
+        time: task.time        
     })
 
     try{
